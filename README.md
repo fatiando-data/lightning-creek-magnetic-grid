@@ -1,39 +1,31 @@
-<!--
-This is a template for datasets in the Fatiando a Terra collection.
+# Lightning Creek Sill Complex, Australia - Airborne total-field magnetic anomaly grid
 
-When adding a new dataset, fill out the information below. Search for all
-instances of "CHANGEME" and replace with the relevant information.
+his is a gridded version of the Lightning Creek anomaly from [our Osborne Mine dataset](https://github.com/fatiando-data/osborne-magnetic). The anomaly is very visible and presents interesting processing and modelling challenges. The grid was generated using [gradient-boosted equivalent sources](https://www.fatiando.org/harmonica/v0.5.1/user_guide/equivalent_sources/gradient-boosted-eqs.html). It's a regular grid in UTM coordinates at a constant height of 500 m. Having the gridded version allows us to use it for FFT-based examples and other applications that require a grid (without having to interpolate every time we need it).
 
-You probably also want to edit the conda environment.yml file to give the
-environment a new name and add/remove dependencies.
-
-You can delete this comment once done.
--->
-
-# Location - Data type
-
-CHANGEME: A few sentences about the dataset and a plot should go here.
-
-![CHANGEME: The alt text of the image.](preview.jpg)
+![Pseudo-color map of the total-field magnetic anomaly grid](preview.jpg)
 
 | | Summary |
 |--:|:--|
-| File | `CHANGEME.csv` |
+| File | `lightning-creek-magnetic-grid.nc` |
 | Size | CHANGEME Mb |
-| Version | [CHANGEME](https://github.com/fatiando-data/CHANGEME/releases/latest) |
+| Version | [v1](https://github.com/fatiando-data/lightning-creek-magnetic-grid/releases/latest) |
 | DOI | https://doi.org/CHANGEME |
 | License | [CC-BY](https://creativecommons.org/licenses/by/4.0/) |
 | MD5 | `md5:CHANGEME` |
 | SHA256 | `sha256:CHANGEME` |
-| Source | CHANGEME: Citation and/or link to original data source |
-| Original license | CHANGEME: License (with link) of the original source |
-| Processing code | [`prepare.ipynb`](https://nbviewer.org/github/fatiando-data/CHANGEME/blob/main/prepare.ipynb) |
+| Source | Geophysical Acquisition & Processing Section 2019. MIM Data from Mt Isa Inlier, QLD (P1029), magnetic line data, AWAGS levelled. Geoscience Australia, Canberra. http://pid.geoscience.gov.au/dataset/ga/142419 |
+| Original license | [CC-BY](http://pid.geoscience.gov.au/dataset/ga/142419) |
+| Processing code | [`prepare.ipynb`](https://nbviewer.org/github/fatiando-data/lightning-creek-magnetic-grid/blob/main/prepare.ipynb) |
 
 ## Changes made
 
 > These are the changes made to the original dataset.
 
-* CHANGEME: List here changes made to the original data.
+* Slice to area of interest.
+* Project data to UTM.
+* Interpolate to a regular 50 m grid at 500 m height.
+* Add CF-compliant metadata to the grid.
+* Export to compressed netCDF 4.
 
 ## About this repository
 
