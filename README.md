@@ -1,6 +1,6 @@
 # Lightning Creek Sill Complex, Australia - Airborne total-field magnetic anomaly grid
 
-his is a gridded version of the Lightning Creek anomaly from [our Osborne Mine dataset](https://github.com/fatiando-data/osborne-magnetic). The anomaly is very visible and presents interesting processing and modelling challenges. The grid was generated using [gradient-boosted equivalent sources](https://www.fatiando.org/harmonica/v0.5.1/user_guide/equivalent_sources/gradient-boosted-eqs.html). It's a regular grid in UTM coordinates at a constant height of 500 m. Having the gridded version allows us to use it for FFT-based examples and other applications that require a grid (without having to interpolate every time we need it).
+This is a gridded version of the Lightning Creek anomaly from [our Osborne Mine dataset](https://github.com/fatiando-data/osborne-magnetic). The anomaly is very visible and presents interesting processing and modelling challenges. The grid was generated using [gradient-boosted equivalent sources](https://www.fatiando.org/harmonica/v0.5.1/user_guide/equivalent_sources/gradient-boosted-eqs.html). It's a regular grid in UTM coordinates at a constant height of 500 m. Having the gridded version allows us to use it for FFT-based examples and other applications that require a grid (without having to interpolate every time we need it).
 
 ![Pseudo-color map of the total-field magnetic anomaly grid](preview.jpg)
 
